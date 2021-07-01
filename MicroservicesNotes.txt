@@ -4,3 +4,5 @@
 				infrastructures like databases and services.
 				
 				* Layers of Onion Architecture -> Domain Layer, Repository Layer , Services Layer, UI Layer
+
+IDisposable => Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources

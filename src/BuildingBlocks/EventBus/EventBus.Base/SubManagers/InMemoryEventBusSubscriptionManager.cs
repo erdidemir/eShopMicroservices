@@ -26,6 +26,8 @@ namespace EventBus.Base.SubManagers
 
         public bool IsEmpty => !_handlers.Keys.Any();
 
+        Action<object, string> IEventBusSubscriptionManager.OnEventRemoved { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public void Clear() => _handlers.Clear();
 
         public void AddSubscription<T, TH>() where T : IntegrationEvent where TH : IIntegrationEventHandler<T>

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EventBus.Base
 {
-    public class EvenBusConfig
+    public class EventBusConfig
     {
-
         public int ConnectionRetryCount { get; set; } = 5;
 
         public string DefaultTopicName { get; set; } = "eShopEventBus";
@@ -23,7 +22,7 @@ namespace EventBus.Base
 
         public EventBusType EventBusType { get; set; } = EventBusType.RabbitMQ;
 
-        public object Connetion { get; set; }
+        public object Connection { get; set; }
 
         public bool DeleteEventPrefix => !String.IsNullOrEmpty(EventNamePrefix);
         public bool DeleteEventSuffix => !String.IsNullOrEmpty(EventNameSuffix);

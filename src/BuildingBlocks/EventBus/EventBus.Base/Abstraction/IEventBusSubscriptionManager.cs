@@ -30,5 +30,7 @@ namespace EventBus.Base.Abstraction
 
         string GetEventKey<T>(); //Routing Key
 
+        Action<object, string> OnEventRemoved { get; set; }
+
     }
 }
