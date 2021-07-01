@@ -11,10 +11,10 @@ namespace EventBus.Base.Events
     {
         [JsonProperty]
 
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         [JsonProperty]
-        public DateTime CratedDate { get; set; }
+        public DateTime CratedDate { get; private set; }
 
         [JsonConstructor]
         public IntegrationEvent()

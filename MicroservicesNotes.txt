@@ -1,0 +1,6 @@
+.NET 5 Onion Architecture -> +
+				* The Onion Architecture term was coined by Jeffrey Palermo in 2008. This architecture provides a better
+				way to build applications for better testability, maintainability, and dependability on the 
+				infrastructures like databases and services.
+				
+				* Layers of Onion Architecture -> Domain Layer, Repository Layer , Services Layer, UI Layer
