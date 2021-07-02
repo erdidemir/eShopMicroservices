@@ -1,8 +1,49 @@
 .NET 5 Onion Architecture -> +
 				* The Onion Architecture term was coined by Jeffrey Palermo in 2008. This architecture provides a better
-				way to build applications for better testability, maintainability, and dependability on the 
-				infrastructures like databases and services.
+					way to build applications for better testability, maintainability, and dependability on the 
+					infrastructures like databases and services.
 				
 				* Layers of Onion Architecture -> Domain Layer, Repository Layer , Services Layer, UI Layer
 
 IDisposable => Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources
+
+CQRS => 
+		* Command Query Responsibility Segregation, It's a pattern that I first heard described by Greg Young. 
+		
+		* At its heart is the notion that you can use a different model to update information than the model you use to read information.
+		
+		* CQRS uses a separate model for all queries
+
+MediatR =>
+		* MediatR Pattern/Library is used to reduce dependencies between objects. It allows in-process messaging,but it will not 
+			allow direct communication between object
+
+		* Remove Dependencies, that's why it's less coupled
+
+		* we can reduce dependencies between object
+
+Domain-Driven Design => 
+		* Eric Evans
+
+		* (DDD) is a software development approach that offers a useful and powerful set of tools to help create a well 
+			designed and business aligned software in a more maintainable way
+
+		* UbiquitousLanguage 
+			* Ubiquitous Language must be expressed in the Domain Model.
+
+		* Bounded Context - Context Mapping
+			*Bounded Context is simply the boundary within a domain where a particular domain model applies
+			*Shipping, Accounts, Customer etc.
+
+		* Entity & Value Object, Aggreagate Root
+			* Base Entity
+			* Aggregate Root is the mothership entity inside the aggregate (Order, OrderItem)
+			* Aggregate Root provides work rules
+
+		* Services - Repository - Infrastructure
+
+		* Layered Architechture
+
+		* Refactoring, Clean & Readable Code
+		
+		* Domain Layer, Application Layer, Insfrastructure Layer, Presentation Layer
